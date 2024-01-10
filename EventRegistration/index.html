@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Event Registration Website">
+    <!-- PAGE TITLE -->
+    <title>Event Registration</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- ALL GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="assets/fonts/linear-fonts.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- START PRELOADER -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- / END PRELOADER -->
+
+    <!-- START HOMEPAGE DESIGN AREA -->
+    <header id="home" class="welcome-area">
+        <div class="header-top-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+
+
+
+
+                        <!-- SIDEBAR MENU -->
+                        <div class="sidebar">
+                            <ul>
+                                <li><a href="#home" class="smooth-scroll">Home</a></li>
+                                <li><a href="#about" class="smooth-scroll">Event</a></li>
+                                <li><a href="#contact" class="smooth-scroll">Tickets</a></li>
+                                <li><a href="#faq" class="smooth-scroll">FAQ's</a></li>
+
+                            </ul>
+                            <button class="sidebarBtn">
+                                <span></span>
+                            </button>
+                        </div>
+                        <!-- END SIDEBAR MENU -->
+                    </div>
+                    <!-- <div class="col-md-9 logo">
+                    <h2>Charity Concert</h2>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="welcome-image-area" data-stellar-background-ratio="0.6">
+            <div class="display-table">
+                <div class="display-table-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="header-text text-center">
+                                    <h2><span class="boxed">EVENT REGISTRATION</span></h2>
+                                    <div class="home-arrow-down hvr-bob">
+                                        <a href="#about" class="smooth-scroll btn"><i
+                                                class="fa fa-angle-double-down downScroll"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / END HOMEPAGE DESIGN AREA -->
+
+
+    <!-- START ABOUT DESIGN AREA -->
+    <section id="about" class="about-me-area section-padding parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2 class="text-center"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- START ABOUT TEXT AREA -->
+                    <div class="about-text">
+                        <p class="wow fadeInUp" data-wow-delay="0.6s"> Come join us for our benefit concert, we have an
+                            amazing line up of musicians for your enjoyment. Don't forget to make a donation, all money
+                            raised will go to helping our local homeless shelters. Also take some time to browse our
+                            silent auction for some great deals. Ticket reservations can be made through our website.
+                        </p>
+                        </ul>
+                    </div>
+                    <!-- / END ABOUT TEXT AREA -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END ABOUT DESIGN AREA -->
+    <!-- CONTACT AREA -->
+    <section id="contact" class="contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2 class="text-center">Reserve Tickets</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row contact-form-design-area">
+                <div class="col-md-12">
+                    <form id="contactForm" class="contact-form" action="#" method="POST"
+                        onsubmit="return validateForm()">
+                        <!-- Form fields -->
+                    </form>
+                    <div class="row">
+                        <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.2s">
+                            <input id="name" class="form-control" type="text" name="name" placeholder="Name" required>
+                            <span id="nameWarning" class="warning"></span>
+                        </div>
+                        <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.3s">
+                            <input id="email" class="form-control" type="email" name="email" placeholder="Email"
+                                required>
+                            <span id="nameWarning" class="warning"></span>
+                        </div>
+                        <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.3s">
+                            <input id="phone" class="form-control" type="tel" name="phone" placeholder="Phone number"
+                                required>
+                            <span id="nameWarning" class="warning"></span>
+                        </div>
+                        <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.5s">
+                            <input id="address" class="form-control" type="text" name="address" placeholder="Address"
+                                required></input>
+                            <span id="nameWarning" class="warning"></span>
+                        </div>
+                        <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.5s">
+                            <input id="city" class="form-control" type="text" name="city" placeholder="City"
+                                required></input>
+                            <span id="nameWarning" class="warning"></span>
+                        </div>
+                        <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.3s">
+                            <select id="state" class="form-control" name="state" required>
+                                <option value="" disabled selected>Select your State</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+
+                            </select>
+                            <span id="nameWarning" class="warning"></span>
+                        </div>
+                        <div class="col-md-6 form-group wow fadeInUp" data-wow-delay="0.3s">
+                            <select id="country" class="form-control" name="country" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Jaipur">Jaipur</option>
+                                <option value="Kolkata">Kolkata</option>
+                            </select>
+
+                        </div>
+
+
+
+
+                        <div class="col-md-12 form-group text-center wow fadeInUp" data-wow-delay="0.6s">
+                            <button type="submit" onclick="validateForm()" class="btn">Submit</button>
+                        </div>
+                    </div>
+                    </form>
+                    <div id="validationMessage" style="color: red;"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END CONTACT AREA -->
+
+    <!-- FAQ AREA -->
+    <section id="faq" class="faq-area section-padding" style="background-color: black">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                        <h2 class="text-center">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <!-- FAQ 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        What is the purpose of this event?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    The event aims to host a benefit concert to raise funds for local homeless shelters
+                                    while providing a delightful musical experience to attendees.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How can I reserve tickets for the event?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Ticket reservations can be made through our website by filling out the form provided
+                                    in the Tickets section.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Are donations accepted at the event?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Yes, donations are encouraged and appreciated. All contributions will directly
+                                    benefit local homeless shelters.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Will there be any additional activities at the event?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    Aside from the concert, there will be a silent auction where attendees can find
+                                    great deals on various items.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Can I learn more about the musicians performing?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    Certainly! Detailed information about the musicians and their performances will be
+                                    available on our website soon.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FAQ AREA  -->
+
+
+    <!-- START FOOTER DESIGN AREA -->
+    <footer class="footer-area section-padding" style="background-color: black">
+        <div class="container">
+            <div class="row">
+                <!-- START SINGLE FOOTER DESIGN AREA -->
+                <div class="col-sm-12 text-center">
+                    <div class="single-footer" data-wow-delay=".2s">
+                        <h6>&copy;copyright || Harshit Mongia</h6>
+                    </div>
+                </div>
+                <!-- / END SINGLE FOOTER DESIGN AREA -->
+            </div>
+        </div>
+    </footer>
+    <!-- / END CONTACT DETAILS DESIGN AREA -->
+
+    <!-- START SCROLL UP DESIGN AREA -->
+    <div class="scroll-to-up">
+        <div class="scrollup">
+            <span class="lnr lnr-chevron-up"></span>
+        </div>
+    </div>
+    <!-- / END SCROLL UP DESIGN AREA -->
+
+
+
+    <!-- LATEST JQUERY -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- scripts js -->
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var address = document.getElementById('address').value;
+            var city = document.getElementById('city').value;
+            var state = document.getElementById('state').value;
+            var country = document.getElementById('country').value;
+            var validationMessage = document.getElementById('validationMessage');
+
+            if (name === '' || email === '' || phone === '' || address === '' || city === '' || state === '' || country === '') {
+                // If any field is empty, display a warning message
+                validationMessage.textContent = 'Please fill in all fields';
+                return false; // Prevent form submission
+            }
+
+            // Clear any previous validation message
+            validationMessage.textContent = '';
+            return true; // Submit the form if all fields are filled
+        }
+    </script>
+
+
+
+
+</body>
+
+
+
+</html>

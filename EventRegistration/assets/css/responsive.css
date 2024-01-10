@@ -1,0 +1,104 @@
+
+
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+
+    .about-text {
+        margin-top: 50px;
+    }
+    .section-title p {
+        padding: 0;
+    }
+
+    .header-text p {
+        padding: 0;
+    }
+
+    .single-footer {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    h2 .boxed {
+    font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .welcome-image-area {
+        padding-top: 120px;
+    }
+    .welcome-image-area h2,
+    .about-text h2, h2 {
+        font-size: 24px;
+    }
+    .section-title h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .scrollup {
+        height: 40px;
+        width: 40px;
+        line-height: 35px;
+    }
+    .header-text {
+        margin-top: 10px;
+    }
+    .footer-text h6 {
+        font-size: 12px;
+    }
+    .footer-area {
+        padding: 50px 0px;
+    }
+    .section-padding {
+        padding: 10px 0px;
+    }
+    .about-text {
+        margin-top: 30px;
+    }
+    .section-title p {
+        padding: 0;
+    }
+    .section-title h2::before {
+        top: 40px;
+    }
+    .header-text p {
+        padding: 0;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    .single-footer {
+        margin-top: 30px;
+    }
+    .about-text p {
+    margin-top: 70px;
+
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+    
+    .about-text p {
+    font-size: 1.7em;
+    line-height: 1.5em;
+    }
+
+    .contact-form button.btn {
+        width: 15%;
+    }
+    .parallax {
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-form button.btn {
+        width: 20%;
+    }
+}
+
+
